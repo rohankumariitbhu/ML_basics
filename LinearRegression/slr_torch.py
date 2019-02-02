@@ -5,8 +5,8 @@ import pandas as pd
 import numpy as np
 
 np.set_printoptions(threshold=np.nan)
-train_data=pd.read_csv('train.csv')
-test_data=pd.read_csv('test.csv')
+train_data=pd.read_csv('train(slr).csv')
+test_data=pd.read_csv('test(slr).csv')
 x_data=np.array(train_data.iloc[:,0:1])
 y_data=np.array(train_data.iloc[:,1:])
 x_data=(x_data-np.mean(x_data))/np.std(x_data)

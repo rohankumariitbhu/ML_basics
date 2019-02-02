@@ -3,8 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
-train_data=pd.read_csv('train.csv')
-test_data=pd.read_csv('test.csv')
+train_data=pd.read_csv('train(slr).csv')
+test_data=pd.read_csv('test(slr).csv')
 # X=train_data.iloc[:,:-1]
 # Y=train_data.iloc[:,-1]
 

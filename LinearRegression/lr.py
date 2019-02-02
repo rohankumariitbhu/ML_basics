@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import confusion_matrix
 np.set_printoptions(threshold=np.nan)
 
-data=pd.read_csv('kc_house_data.csv')
+data=pd.read_csv('kc_house_data(lr).csv')
 
 x_data=np.array(data.iloc[:,3:])
 x_data=(x_data-np.mean(x_data))/np.std(x_data)

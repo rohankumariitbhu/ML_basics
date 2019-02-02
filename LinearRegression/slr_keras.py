@@ -4,8 +4,8 @@ import pandas as pd
 from keras.models import Sequential
 from keras.layers import Dense
 np.set_printoptions(threshold=np.nan)
-train_data=pd.read_csv('train.csv')
-test_data=pd.read_csv('test.csv')
+train_data=pd.read_csv('train(slr).csv')
+test_data=pd.read_csv('test(slr).csv')
 x_data=np.array(train_data.iloc[:,0:1])
 y_data=np.array(train_data.iloc[:,1:])
 xtest_data=np.array(test_data.iloc[:,0:1])

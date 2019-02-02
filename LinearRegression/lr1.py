@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
-data=pd.read_csv('kc_house_data.csv')
+data=pd.read_csv('kc_house_data(lr).csv')
 x_data=np.array(data.iloc[:,3:])
 y_data=np.array(data.iloc[:,2:3])
 

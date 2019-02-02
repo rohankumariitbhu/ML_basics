@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-train_data=pd.read_csv('train.csv')
-test_data=pd.read_csv('test.csv')
+train_data=pd.read_csv('train(slr).csv')
+test_data=pd.read_csv('test(slr).csv')
 x_data=np.array(train_data.iloc[:,0:1])
 y_data=np.array(train_data.iloc[:,1:])
 xtest_data=np.array(test_data.iloc[:,0:1])
