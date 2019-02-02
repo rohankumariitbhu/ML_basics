@@ -9,12 +9,11 @@ df = pd.read_csv('voice.csv')
 
 #check relation between features
 df.corr()
-df.isnull().sum()
-df.shape
-X=df.iloc[:,:-1]
-y=df.iloc[:,-1]
-gender_encode=LabelEncoder()
-y=gender_encode.fit(y)
+print(df.isnull().sum())
+X=df.iloc[1:,:-1]
+y=df.iloc[1:,-1]
+gender_encoder = LabelEncoder()
+y = gender_encoder.fit_transform(y)
 
 # Standardization (i.e. mean=0 and standard deviation =1 ) To make individual feature look like standard noramally distributed data
 
