@@ -146,4 +146,4 @@ print(gs.best_params_)
 print(gs.cv_results_)
 
 
-print("%.4f" % rf.oob_score_)
+print("%.4f" % rf.oob_score)
