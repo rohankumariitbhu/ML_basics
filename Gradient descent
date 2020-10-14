@@ -1,0 +1,30 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.arange(10)
+print(x)
+
+def lossFn(x):
+    return (x-5)**2
+
+loss = lossFn(x)
+
+plt.style.use("seaborn")
+plt.plot(loss)
+plt.show()
+
+def gradDescent():
+    x_ = 0 #or any random value
+    learning_rate = 0.1
+    print(x_)
+    
+    plt.plot(loss)
+    for i in range(30):
+        grad = 2*(x_-5)
+    
+        x_ = x_ - learning_rate*grad
+        l = lossFn(x_)
+        print("X_ : %.3f Loss:  %.3f  "%(x_,l))
+        plt.scatter(x_,l)
+
+gradDescent()
